@@ -1,3 +1,9 @@
-LIK Sportas — dark modern site (Lithuanian)
+# electronjs.org-old
 
-Upload these files to GitHub repo root and enable Pages.
+> **Warning**
+> 
+> This repository hosts an old version of Electron's website. For the source code of the current website, see the [`electron/website`](https://github.com/electron/website) repository.
+
+## License
+
+[MIT](LICENSE.md)
