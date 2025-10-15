@@ -1,15 +1,13 @@
-function handleForm(e){
-  e.preventDefault();
-  const name=document.getElementById('name').value.trim();
-  const email=document.getElementById('email').value.trim();
-  const message=document.getElementById('message').value.trim();
-  const result=document.getElementById('formResult');
-  if(!name||!email||!message){
-    result.textContent='Prašome užpildyti visus laukus.';
-    result.style.color='crimson';return;
-  }
-  result.textContent='Žinutė išsaugota lokaliai (demo).';
-  result.style.color='green';
-  document.getElementById('contactForm').reset();
-}
-window.handleForm=handleForm;
+// small UI niceties
+document.addEventListener('DOMContentLoaded', function(){
+  // reduce motion respect
+  const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if(prefersReduced) return;
+
+  // simple fade-in
+  document.querySelectorAll('.card, .product, .info-card, .hero-text, .hero-media img').forEach((el,i)=>{
+    el.style.opacity = 0;
+    el.style.transform = 'translateY(12px)';
+    setTimeout(()=>{ el.style.transition='opacity .6s ease, transform .6s ease'; el.style.opacity=1; el.style.transform='translateY(0)'; }, 120*i);
+  });
+});

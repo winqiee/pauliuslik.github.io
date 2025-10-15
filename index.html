@@ -1,64 +1,98 @@
 <!doctype html>
 <html lang="lt">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Sportas — LIK Inžinerijos Kolegija</title>
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="icon" href="data:,🏃‍♂️">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>LIK Sportas — Pagrindinis</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
   <header class="site-header">
-    <div class="container">
-      <h1 class="logo">LIK Sportas</h1>
+    <div class="wrap">
+      <a class="brand" href="index.html">LIK <span>Sportas</span></a>
       <nav>
-        <a href="index.html" class="active">Pagrindinis</a>
-        <a href="about.html">Apie</a>
-        <a href="kontaktai.html">Kontaktai</a>
+        <a href="krepšinis.html">Krepšinis</a>
+        <a href="futbolas.html">Futbolas</a>
+        <a href="atletika.html">Lengvoji atletika</a>
       </nav>
     </div>
   </header>
 
   <main>
     <section class="hero">
-      <div class="container">
-        <h2>Sportas ir sveikata LIK</h2>
-        <p>Renginiai, komandos ir projektai — viskas, ko reikia aktyviam studento gyvenimui.</p>
-        <a class="btn" href="about.html">Sužinok daugiau</a>
+      <div class="wrap hero-grid">
+        <div class="hero-text">
+          <h1>Sportas LIK Inžinerijos Kolegijoje</h1>
+          <p class="lead">Atrask studijų bendruomenę per sportą — komandos, renginiai ir užsiėmimai visiems.</p>
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="krepšinis.html">Krepšinis</a>
+            <a class="btn btn-outline" href="futbolas.html">Futbolas</a>
+          </div>
+        </div>
+        <div class="hero-cards">
+          <article class="card">
+            <img src="https://picsum.photos/seed/ball/800/600" alt="Sporto kamuolys">
+            <div class="card-body">
+              <h3>Kreipkitės į komandas</h3>
+              <p>Prisijunkite ir atstovaukite LIK varžybose.</p>
+            </div>
+          </article>
+          <article class="card">
+            <img src="https://picsum.photos/seed/runners/800/600" alt="Bėgikai">
+            <div class="card-body">
+              <h3>Treniruotės ir renginiai</h3>
+              <p>Reguliarios treniruotės ir tarpusavio turnyrai.</p>
+            </div>
+          </article>
+        </div>
       </div>
     </section>
 
-    <section class="features container">
-      <article>
-        <img src="https://picsum.photos/seed/sport1/600/350" alt="Komandos">
-        <h3>Studentų komandos</h3>
-        <p>Futbolas, krepšinis, lengvoji atletika — prisijunk prie komandos ir atstovauk LIK.</p>
-      </article>
+    <section class="grid wrap">
+      <h2 class="section-title">Mūsų sporto puslapiai</h2>
+      <div class="grid-cards">
+        <a class="product" href="krepšinis.html">
+          <img src="https://picsum.photos/seed/krep/600/400" alt="Krepšinis">
+          <div class="product-info">
+            <h3>Krepšinis</h3>
+            <p>Komanda, treniruotės ir taktiniai užsiėmimai.</p>
+          </div>
+        </a>
 
-      <article>
-        <img src="https://picsum.photos/seed/sport2/600/350" alt="Treniruotės">
-        <h3>Treniruotės</h3>
-        <p>Organizuojamos reguliarios treniruotės su treneriais ir patyrusiais studentais.</p>
-      </article>
+        <a class="product" href="futbolas.html">
+          <img src="https://picsum.photos/seed/foot/600/400" alt="Futbolas">
+          <div class="product-info">
+            <h3>Futbolas</h3>
+            <p>Varžybos, technika ir komandiniai statymai.</p>
+          </div>
+        </a>
 
-      <article>
-        <img src="https://picsum.photos/seed/sport3/600/350" alt="Renginiai">
-        <h3>Renginiai</h3>
-        <p>Aktyvūs renginiai, turnyrai ir bendruomenės iniciatyvos visus metus.</p>
-      </article>
+        <a class="product" href="atletika.html">
+          <img src="https://picsum.photos/seed/track/600/400" alt="Lengvoji atletika">
+          <div class="product-info">
+            <h3>Lengvoji atletika</h3>
+            <p>Greitis, ištvermė ir technika įvairiose rungtyse.</p>
+          </div>
+        </a>
+      </div>
     </section>
 
-    <section class="cta container">
-      <h3>Prisijunk prie mūsų</h3>
-      <p>Norite gauti naujienas apie renginius? Palikite kontaktą.</p>
-      <a class="btn" href="kontaktai.html">Kontaktai</a>
+    <section class="info wrap">
+      <div class="info-card">
+        <h3>Apie</h3>
+        <p>LIK sporto veikla skatina sveiką gyvenimo būdą ir studentų bendruomenę. Šioje svetainėje trumpai supažindinsime su pagrindinėmis sporto šakomis.</p>
+      </div>
+      <div class="info-card">
+        <h3>Kontaktai</h3>
+        <p>Norite prisijungti? Parašykite savo užklausą per el. paštą ar prisijunkite prie mūsų treniruočių.</p>
+      </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div class="container">
-      <p>© LIK Inžinerijos Kolegija — Sporto skyrius</p>
-      <small>Projektas: Grupinis darbas</small>
+    <div class="wrap">
+      <p>© LIK Inžinerijos Kolegija — Sportas • Projektas</p>
     </div>
   </footer>
 
