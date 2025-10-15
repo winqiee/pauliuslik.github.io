@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="lt">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Kontaktai — LIK Sportas</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:,📞">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="logo">LIK Sportas</h1>
+      <nav>
+        <a href="index.html">Pagrindinis</a>
+        <a href="about.html">Apie</a>
+        <a href="kontaktai.html" class="active">Kontaktai</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container content">
+    <h2>Susisiekite</h2>
+    <p>Norite prisijungti prie treniruočių arba turite klausimų? Parašykite žemiau.</p>
+
+    <form id="contactForm" onsubmit="handleForm(event)">
+      <label>Vardas</label>
+      <input type="text" id="name" required>
+      <label>El. paštas</label>
+      <input type="email" id="email" required>
+      <label>Žinutė</label>
+      <textarea id="message" rows="5" required></textarea>
+      <button type="submit" class="btn">Siųsti</button>
+      <p id="formResult" class="muted"></p>
+    </form>
+
+    <h3>Adresas</h3>
+    <p>LIK Inžinerijos Kolegija — Sporto skyrius<br>Adresas: J. Basanavičiaus g. 1, Kaunas (pavyzdys)</p>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© LIK Sportas</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
