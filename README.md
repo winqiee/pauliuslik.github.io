@@ -1,3 +1,3 @@
-# LIK Sportas — Dark modern site
+LIK Sportas — dark modern site (Lithuanian)
 
-This is a static site with 4 pages. Deploy on GitHub Pages by uploading files to the repo root and enabling Pages.
+Upload these files to GitHub repo root and enable Pages.
